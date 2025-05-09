@@ -1,0 +1,5 @@
+Run Time Complexity
+- no loops means O(1)
+- 20 + 3n + 50 --> O(n) b/c drop constants and coefficient
+- double for loop n --> O(n^2)
+

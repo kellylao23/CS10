@@ -1,0 +1,23 @@
+Inheritance Review
+- all classes are subclasses of Java Object class (toString, hashCode, etc.)
+- super keyword refers to parent class (can continue to search up to find methods)
+- cannot cast as object not in inheritance chain nor down an inheritance chain (can only cast up)
+
+1. Abstract Data Types (ADTs)
+- ADTs specify a set of operations (e.g. get, set, add, ...) that define how the ADT behaves on a collection of data elements
+- At the ADT level, we don't know what data structure is used to store elements (e.g. linked list or array or stmg else)
+- Also do not care about what king of data the ADT holds (e.g. Strings, integers, Objects), will work same away regardless what type of data it holds
+- Defines set of ADT operations
+- Interface says what to implement, not how to implement
+
+2. Generics
+- T stands for whatever object type we instantiate
+- With SimpleList<Student> list = new ArrayList<Student>); thenT always stands for Student
+- Must use autobox version of primitives (Integer, Double, etc.) - have to store objects in list, not primitives
+
+3. Java's List implementation
+
+4. Run-time complexity
+
+5. Asymptotic notation
+

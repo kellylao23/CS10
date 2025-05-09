@@ -1,0 +1,3 @@
+linked list - O(n)
+binary tree - O(n) traverse through every node recursively
+binary search - checks is log2(n)
