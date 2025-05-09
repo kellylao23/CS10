@@ -1,0 +1,7 @@
+The graph:
+Vertices: [A, B, C, D, E]
+Out edges: {A={B=follower, C=follower, D=follower, E=follower}, B={A=follower, C=follower}, C={A=follower, B=follower, D=follower}, D={}, E={B=follower, C=follower}}
+[B, A, B, A, C]
+[A, C, A, B, C, A, C, A, D]
+[E, B, A, D]
+[B, C, A, D, E]
