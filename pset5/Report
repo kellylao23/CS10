@@ -1,0 +1,36 @@
+
+Report: This methodology utilizes the Veterbi algorithm to traverse through given states,
+adding up weighted transitions, the weight of a new observation, and the sum of previous observations
+ on a given most optimal path, finding the most probable ordering of something, in this case the
+ Part-of-Speech of words in a sentence. Our tests included all three requirements, including hard-coding,
+  a console log test, and a sentence input test. For the hard coding specifically, we utilized simile
+  sentences with similar usages, but ones that could be easily distinguished to the human eye. For example,
+  we took inspiration from the recitation assignment, utilizing comparisons like Chase (Proper Noun) and
+  chase (verb) in different sentences/contexts to test the extent of our program. We also fed the trained
+  algorithm sentences that contained words from the trained information, specifically in order to test.
+   We got answers that matched the intuitive code, proving its effectiveness.
+
+
+In some of our utilized sentences, we found that by using the simple test as a trainer, we got
+some errors and successes. For example, the sentence:
+
+
+“My watch glows in the night” works effectively, classing each part of speech correctly.
+ However, other sentences weren’t as effective. For example:
+
+
+“The dog saw trains in the night” has the 3rd word labeled incorrectly:
+“Saw” is labeled as a P (preposition), but is actually a V (verb) within this context.
+We theorize this occurred because saw does indeed function as a preposition,
+and is simply a more common occurrence. This creates the potential for errors,
+especially with untrained or weakly trained models.
+
+
+Overall, the testing yielded both positive and negative results,
+ and was overall accurate with only 5 word errors for the small file,
+  very impressive considering the small data set. In terms of the unseen word
+  penalty, it’s clear that the larger weighting of -100 creates hugely negative
+   incentives if a word does not fit in a given instance. This is crucial to
+    note because it means the ones with less negative paths have a far higher
+    probability of being successful than those that do not. There were no other
+     primary parameters that were utilized within our coding environment.

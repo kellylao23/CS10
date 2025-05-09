@@ -1,0 +1,9 @@
+Some possible multi-client issues include conflicts with concurrencies because under typical circumstances,
+the Operating System runs one thread at a time, but can choose when to stop and start the thread. So, when there are multiple
+threads running, the Operating System may start and stop threads randomly. This could lead to deadlocks or inconsistent
+results in general. Because our code only required relatively short runtimes for the methods, even when they weren't synchronized,
+there was no noticeable difference. However, even though there is no noticeable differences in the results, the Operating System
+is still starting and stopping threads at random times. In order to have move, recolor, delete, and draw all synchronized,
+we made the handleClientMessage method synchronized so that it would run one action in it's entirety, whether it be move, recolor,
+delete, or draw. Given that there are only four actions, making handleClientMessage synchronized would handle synchronization
+for all four actions.
